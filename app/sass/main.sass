@@ -1,0 +1,537 @@
+@import "fonts"
+@import "vars"
+
+body
+	font-family: $baseFont
+	font-size: 16px
+	line-height: 1.75
+	position: relative
+	opacity: 1
+	background-color: #FFF
+	button, input
+		outline-style: none
+	.wrapper
+		max-width: 1920px
+		min-width: 480px
+		margin: 0 auto
+	a:link, a:visited, a:hover, a:active
+		text-decoration: none
+		color: inherit
+		padding: 5px
+	.wrapper-1200
+		max-width: 1200px
+		margin: 0 auto
+		padding: 0 15px
+
+
+.anti-collapsing::before
+	content: ""
+	display: table
+.anti-collapsing::after
+	content: ""
+	display: table
+
+.overlay::before
+	content: '';
+	display: block
+	position: absolute
+	top: 0
+	left: 0
+	height: 100%
+	width: 100%
+	background: rgba(0, 0, 0, .5)
+	z-index: 10
+
+.header-top
+	background: $bg-black
+	color: $white
+	font-size: 13px
+	font-weight: 300
+	.row > div
+		padding-left: 0
+		padding-right: 0
+	.header-social-networks, .header-contacts
+		padding: 9px 0
+	.header-social-networks
+		white-space: nowrap
+		padding-left: 0px
+		a
+			padding: 0px 3px 0 0
+	.header-contacts
+		white-space: nowrap
+		text-align: right
+		.fa
+			margin-right: 10px
+		.phone-container
+			margin-right: 35px
+
+.header-menu
+	padding: 14px 0
+	.row > div
+		padding-left: 0
+		padding-right: 0
+	.header-logo
+		font-family: BasicSansSerif
+		font-size: 30px
+		color: #636666
+		text-transform: uppercase;
+		padding-left: 0
+		padding-right: 0
+	.header-nav
+		font-size: 14px
+		// padding-right: 0
+		ul
+			list-style-type: none
+			text-align: right
+			li
+				display: inline-block
+				padding-right: 35px
+			li:last-child
+				padding-right: 0
+		#header-nav-sing-in
+			a
+				color: $lightGreen
+				border: 1px solid $lightGreen 
+				border-radius: 20px
+				padding: 5px 25px
+
+.bring-your
+	background-color: $darkGreen
+	text-align: center
+	color: #000
+	.h2
+		font-size: 48px
+		font-weight: 300
+		margin: 82px 0 0px
+		padding: 0 5px
+	p
+		max-width: 772px
+		margin: 0 auto
+		font-weight: 300
+		padding: 0 5px 28px
+	img
+		display: inline-block
+		margin-bottom: 83px
+		padding: 0 5px
+
+.use-it-free
+	background-color: $bg-lightGrey
+	margin: 0 auto
+	position: relative
+	text-align: center
+	font-size: 0
+	.input-container
+		width: 262px
+		margin: 32px auto 0
+		position: relative
+		input
+			width: 260px
+			height: 32px
+			border: 1px solid $grey
+			border-radius: 15px
+			padding: 0 75px 5px 20px
+			line-height: 
+			color: #777
+			font-size: 16px
+			font-weight: 300
+		input::placeholder
+				color: $grey
+				font-size: 12px
+				font-weight: 300
+		#btn-use-it-free
+			border: 1px solid $grey
+			border-radius: 0 15px 15px 0
+			background-color: $lightGreen
+			position: absolute
+			top: 0px
+			right: 0
+			color: $white
+			font-size: 12px
+			font-weight: 300
+			padding: 4px 10px 5px 10px
+	p
+		font-size: 12px
+		font-weight: 100
+		color: #777
+		margin: 16px 0 24px
+
+.community
+	background-image: url("../img/bg-community.png")
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	position: relative
+	color: #fff
+	.overlay::before
+		background: rgba(0, 0, 0, .6)
+	.h2
+		text-align: center
+		position: relative
+		z-index: 11
+		font-size: 48px
+		font-weight: 300
+		margin: 78px 0 28px
+	.singup-progress-block::before
+		background: rgba(255, 255, 255, .15)
+	.singup-progress-block
+		max-width: 632px
+		position: relative
+		z-index: 11
+		margin: 0px auto 40px
+		padding: 25px 0 53px
+	.singup-wrapper
+		margin-left: 41.5%
+	.arrows-up-down
+		max-width: 35px
+		line-height: 1.4
+		position: relative
+		z-index: 11
+		margin: 10px 0 20px
+		a
+			padding: 0
+		img
+			width: 30px
+			height: auto
+	.sing-up-algorithm
+		position: relative
+	.sing-up-algorithm
+		.fas
+			font-size: 80px
+			color: $lightGreen
+			position: absolute
+			top: 0
+			left: -100px
+
+	.h3
+		color: $lightGreen
+		font-size: 26px
+		font-weight: 100
+		text-transform: uppercase
+		margin: 0
+	ol
+		margin: 0
+		font-weight: 300
+		padding-left: 18px
+	
+	.icons-block
+		position: relative
+		z-index: 11
+		max-width: 632px
+		margin: 0 auto 90px
+		text-align: center
+		font-size: 12px
+		.icon
+			display: inline-block
+			width: 33%
+			vertical-align: top
+			.squre
+				border-radius: 50%
+				width: 48px
+				height: 48px
+				margin: 10px auto
+				line-height: 48px
+				background-color: #4a652f
+				font-size: 16px
+				transition: background-color 0.2s linear, color 0.2s linear
+				&:hover
+					background-color: #ffffff
+					color: $lightGreen
+
+.packages
+	.h3
+		font-size: 48px
+		font-weight: 300
+		text-align: center
+		margin: 77px 0 28px
+	.btns-container
+		width: 290px
+		height: 35px
+		position: relative
+		font-size: 0
+		margin: 0 auto
+		button
+			font-size: 12px
+			color: #333
+			display: inline-block
+			background-color: #FFF
+			border: 1px solid $grey
+			width: 50%
+			height: 100%
+		button.btn-active
+			background-color: $lightGreen
+			color: #fff
+		#btn-bussines-edition
+			border-right: none
+			border-radius: 17.5px 0 0 17.5px
+		#btn-community-edition
+			border-radius: 0 17.5px 17.5px 0
+		.squre
+			height: 20px
+			width: 20px
+			background-color: $darkGreen
+			border-radius: 50%
+			color: #fff
+			font-size: 10px
+			text-align: center
+			text-transform: uppercase
+			line-height: 20px
+			position: absolute
+			top: 0
+			left: 50%			
+			margin-left: -10px
+			margin-top: 7.5px
+
+.packages-block
+	max-width: 1170px
+	margin: 24px auto
+	display: flex
+	justify-content: center
+	flex-wrap: wrap
+	padding: 0 0 50px
+	.package-item
+		width: 270px
+		border: 1px solid #ececec
+		margin: 24px
+		position: relative
+		text-align: center
+		padding: 0 0 40px
+		.package-name
+			text-transform: uppercase
+			text-align: center
+			font-size: 14px
+			font-weight: 500
+			margin-bottom: 25px
+		.package-price
+			width: 90px
+			height: 90px
+			margin: 0 auto
+			border: 1px solid $lightGreen
+			background-color: #FFF
+			border-radius: 50%
+			position: relative
+			text-align: center
+			line-height: 1
+			padding: 24px 0 0
+			background: #fff
+			z-index: 10
+			span:first-child
+				font-size: 23px
+				font-weight: 500
+				color: #333
+			span:last-child
+				font-size: 10px
+				font-weight: 300
+				font-style: italic
+				color: #777
+		.package-price::after
+			content: ""
+			position: absolute
+			top: -3px
+			left: -3px
+			width: 94px
+			height: 94px
+			border-radius: 50%
+			display: block
+			border: 2px solid #ececec
+	.package-item::after
+		content: ""
+		max-width: 270px
+		width: 100%
+		height: 0px
+		border-top: 1px solid #ececec
+		position: absolute
+		top: 112px
+		left: 0
+		z-index: 9
+	.package-item
+		ul
+			margin-top: 26px
+			padding-left: 0px
+			margin-left: -18px
+			font-size: 12px
+			color: #777
+			li
+				position: relative
+				list-style: none
+				line-height: 2.5
+			li::before
+				content: "\f058"
+				font-family: fontawesome
+				font-size: 10px
+				padding-right: 6px
+				color: #e1e1e1
+			li.included::before
+				color: $lightGreen
+	button
+		font-size: 10px
+		text-transform: uppercase
+		color: #333
+		padding: 6px 37px
+		border-radius: 15px
+		margin-top: 12px
+		border: 1px solid $grey
+		background-color: #FFF
+		transition: background-color 0.2s linear, color 0.2s linear
+
+	.package-item::before
+		content: ""
+		height: 1px
+		width: 75px
+		display: block
+		margin-left: 50%
+		position: absolute
+		border-top: 2px solid #cccccc
+		transform: translate(-50%)
+		transition: border-top 1s linear
+	.package-item:hover::before
+		border-top: 3px solid $darkGreen
+	.package-item:hover button
+			background-color: $lightGreen
+			color: #ffffff
+.advantages
+	background-image: url("../img/bg-advantages.png")
+	background-repeat: repeat
+	padding: 85px 0
+	.h3
+		max-width: 832px
+		margin: 0 auto
+		font-weight: 300
+		font-size: 48px
+		color: #000
+		text-align: center
+		line-height: 1.25
+		padding: 2px 0 30px
+	.col-md-3
+		margin: 15px 0
+	.advantages-item
+		height: 320px
+		background-color: #fff
+		text-align: center
+		box-shadow: 0px 1px 3px 1px rgba(#404040, .3)
+		padding: 10px 10px 57px
+		transition: background-color 0.2s linear
+		&:hover
+			background-color: $lightGreen
+			.icon-container, .edition-name, p
+				color: $white
+		.icon-container
+			width: 70px
+			margin: 12px auto 
+			line-height: 1
+			padding: 13.5px 0
+			font-size: 60px
+			color: $lightGreen
+			border-bottom: 2px solid #ececec
+			transition: color 0.2s linear
+		.edition-name
+			text-transform: uppercase
+			font-size: 16px
+			line-height: 1.85
+			font-weight: normal
+			color: #333
+			margin: 0 0 24px
+			transition: color 0.2s linear
+		p
+			padding: 0
+			margin: 0
+			font-size: 12px
+			font-weight: 300
+			color: #777
+			transition: color 0.2s linear
+
+footer
+	background-color: $bg-lightGrey
+.footer-top
+	margin: 0 auto
+	padding: 45px 0 30px
+	border-bottom: 1px solid #e1e2e3
+	.wrapper-1200
+		display: flex
+		& > *
+			padding-right: 25px
+	.h3
+		color: #010101
+		font-size: 16px
+		font-weight: normal
+	ul
+		text-transform: uppercase
+		list-style: none
+		padding: 0
+		margin-top: 26px
+		li
+			font-size: 13px
+			font-weight: 300
+			color: #333
+			margin: 8px 0
+			a
+				padding: 0
+	.newsletter
+		width: 40%
+		font-size: 0
+		.inut-container
+			max-width: 330px
+			position: relative
+		p
+			max-width: 330px
+			font-weight: 300
+			font-size: 12px
+			color: #333333
+			margin: 24px 0
+		input
+			border: none
+			width: 100%
+			height: 45px
+			font-size: 16px
+			font-weight: 300
+			font-style: italic
+			color: #333333
+			padding-right: 65px
+			padding-left: 8px
+		input::placeholder
+			color: $grey
+			font-size: 12px
+			font-weight: 100
+			font-style: italic
+		button
+			position: absolute
+			background-color: $lightGreen
+			border: none
+			right: 0
+			width: 57px
+			height: 45px
+			font-size: 22px
+			color: #fff
+			font-weight: 100
+	.quck-links
+		width: 23%
+	.legal
+		width: 20%
+.footer-bottom
+	padding: 42px 0
+	.footer-logo
+		float: left
+		font-size: 20px
+		font-family: BasicSansSerif
+		color: #636666
+		text-transform: uppercase;
+		padding-top: 5px
+	.footer-copyright
+		float: right
+		font-weight: 300
+		font-size: 11px
+		color: #777777
+		text-align: right
+
+			
+
+
+
+
+
+
+		
+
+
+
+
+@import "media"
